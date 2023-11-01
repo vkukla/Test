@@ -1,10 +1,29 @@
 .container {
-  max-width: 1170px;
   margin: 0 auto;
+
+  @media (min-width: 320px) {
+    padding: 0 15px;
+  }
+
   @media (min-width: 768px) {
     max-width: 738px;
+    padding: 0;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1170px;
   }
 }
 body{
     font-family: "Roboto";
+}
+.sohcial{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  i{
+    font-size: 22px;
+  }
 }
